@@ -1,0 +1,55 @@
+/********Reset**********/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+/*******/
+
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/***Menu***/
+
+/**Menu slut**/
+
+/*** Mobilversion ***/
+
+.category_list_container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 30px;
+  text-align: center;
+}
+
+.forside_overskrift {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+/*** Desktop ***/
+
+@media (min-width: 800px) {
+  .category_list_container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 40px;
+    text-align: center;
+  }
+
+  .forside_overskrift {
+    text-align: center;
+  }
+
+  .category {
+    background-color: red;
+  }
+}
