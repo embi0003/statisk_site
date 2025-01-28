@@ -227,6 +227,8 @@ nav {
 /*** Desktop ***/
 
 @media (min-width: 800px) {
+  /** Forside**/
+
   .category_list_container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -264,6 +266,8 @@ nav {
     transition: all 0.3s ease;
   }
 
+  /*** Produklisteside**/
+
   .product_list_container {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -271,12 +275,12 @@ nav {
     margin-top: 30px;
   }
 
-  .underoverskrift_product {
+  .product .underoverskrift_product {
     font-family: roboto condensed;
     font-size: 25px;
   }
 
-  .producttitel {
+  .product .producttitel {
     font-family: roboto condensed;
     color: rgb(151, 151, 151);
     margin-top: 10px;
@@ -285,9 +289,30 @@ nav {
   .price {
     font-family: roboto condensed;
   }
+  .price span {
+    font-family: roboto condensed;
+  }
+
+  .discounted {
+    font-family: roboto condensed;
+  }
 
   .productlinks {
     font-family: roboto condensed;
     color: black;
+  }
+
+  .discount {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 5px;
+  }
+
+  .discount p:last-child {
+    background-color: red;
+    padding: 5px 10px;
+    font-family: roboto condensed;
+    width: 15%;
   }
 }
