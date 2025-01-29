@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="da">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Produktside</title>
+    <link rel="stylesheet" href="layout.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,200..900;1,200..900&family=Indie+Flower&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Lobster&family=Lora:ital,wght@0,400..700;1,400..700&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Phudu:wght@300..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Righteous&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <a href="index.html">
+          <h1>
+            Fashion
+            <span>R</span>
+            Us
+          </h1>
+        </a>
+      </div>
+      <nav>
+        <ul class="menu">
+          <li><a href="index.html">Categories</a></li>
+          <li><a href="index.html">Brands</a></li>
+          <li><a href="index.html">Seasons</a></li>
+        </ul>
+      </nav>
+      <div class="burger">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </div>
+    </header>
+    <main>
+      <h1 class="product_title">Product Information</h1>
+      <section class="product-container">
+        <div class="product-image">
+          <img src="https://kea-alt-del.dk/t7/images/webp/640/1531.webp" alt="Puma-tee" />
+        </div>
+
+        <div class="product-info">
+          <h2>Grey Solid Round Neck T-Shirt</h2>
+          <p><strong>Brand:</strong> Puma</p>
+          <p><strong>Color:</strong>Grey</p>
+          <p><strong>Inventory number</strong>1531</p>
+
+          <p class="price">DKK 799,-</p>
+
+          <label for="size">Choose a size</label>
+          <select id="size">
+            <option value="S">S</option>
+            <option value="M">M</option>
+            <option value="L">L</option>
+            <option value="XL">XL</option>
+          </select>
+          <button id="add-to-basket" disabled>Put to basket</button>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
