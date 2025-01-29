@@ -224,6 +224,33 @@ nav {
   font-family: roboto condensed;
 }
 
+.price span {
+  font-family: roboto condensed;
+}
+
+.discounted {
+  font-family: roboto condensed;
+}
+
+.productlinks {
+  font-family: roboto condensed;
+  color: black;
+}
+
+.discount {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 5px;
+}
+
+.discount p:last-child {
+  background-color: red;
+  padding: 5px 10px;
+  font-family: roboto condensed;
+  width: 17%;
+}
+
 /*** Desktop ***/
 
 @media (min-width: 800px) {
