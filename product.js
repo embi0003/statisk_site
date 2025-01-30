@@ -15,8 +15,8 @@ function vis(data) {
   <div class="product-info">
     <h2>${data.productdisplayname}</h2>
     <p>${data.brandname}</p>
-    <p><strong>Color:</strong> Grey</p>
-    <p><strong>Inventory number:</strong> 1531</p>
+    <p>${data.category}</p>
+    <p>${data.id}</p>
 
     <p class="price">${data.price},- </p>
 
