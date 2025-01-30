@@ -7,6 +7,7 @@
   grid-column: 1;
   grid-row: 1;
 }
+
 .img-w-txt {
   display: grid;
   align-items: center;
