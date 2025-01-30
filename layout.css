@@ -255,7 +255,7 @@ nav {
   width: 17%;
 }
 
-.product-container {
+.productContainer {
   display: grid;
   grid-template-columns: 1fr;
   gap: 20px;
@@ -433,7 +433,7 @@ button {
 
   /*** Side med det specifikke produkt***/
 
-  .product-container {
+  .productContainer {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 20px;
