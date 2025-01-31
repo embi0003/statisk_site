@@ -14,7 +14,7 @@ function vis(data) {
 
   <div class="product-info">
     <h2>${data.productdisplayname}</h2>
-    <p>${data.brandname}</p>
+    <p class="producttitel">${data.brandname}</p>
     <p>${data.category}</p>
     <p>${data.id}</p>
 
