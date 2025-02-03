@@ -3,7 +3,7 @@ const mycategory = new URLSearchParams(window.location.search).get("category");
 console.log("produktliste loader...", mycategory);
 
 const productList = document.querySelector(".list");
-const overskrift = document.querySelector("h1");
+const overskrift = document.querySelector("h2");
 
 overskrift.innerHTML = mycategory;
 
