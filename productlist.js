@@ -16,17 +16,18 @@ function showList(products) {
   const markup = products
     .map(
       (product) =>
-        `<article class="product udsolgt">
+        `<article class= "product ${product.discount && "tilbud"} ${product.soldout && "udsolgt"}">
           <a href="product.html?id=${product.id}">
-            <div class="img-w-txt">
+            <div class="soldout">
               <img src=https://kea-alt-del.dk/t7/images/webp/640/${product.id}.webp alt="Puma tshirt med cat " />
               <p>SOLD OUT</p>
             </div>
           </a>
+
           <h2 class="underoverskrift_product"> ${product.productdisplayname}</h2>
           <p class="brandname"> ${product.brandname}</p>
           <p class="price"> ${product.price}-</p>
-          <a class="productlinks" href="product.html">Read more</a>
+          <a class="productlinks" href="product.html?productid=${product.id}">Read more</a>
         </article>`
     )
 

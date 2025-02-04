@@ -3,23 +3,23 @@
   pointer-events: none;
 }
 
-.img-w-txt > * {
+.soldout > * {
   grid-column: 1;
   grid-row: 1;
 }
 
-.img-w-txt {
+.soldout {
   display: grid;
   align-items: center;
 }
 
-.img-w-txt img {
+.soldout img {
   width: 100%;
   height: auto;
   object-fit: cover;
 }
 
-.img-w-txt p {
+.soldout p {
   grid-column: 1;
   grid-row: 1;
   font-size: 20px;
@@ -34,7 +34,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  display: none;
 }
 
 .productlinks.disabled {
