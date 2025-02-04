@@ -17,7 +17,7 @@ function showList(products) {
     .map(
       (product) =>
         `<article class="product udsolgt">
-          <a href="product.html">
+          <a href="product.html?id=${product.id}">
             <div class="img-w-txt">
               <img src=https://kea-alt-del.dk/t7/images/webp/640/${product.id}.webp alt="Puma tshirt med cat " />
               <p>SOLD OUT</p>
