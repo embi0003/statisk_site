@@ -16,18 +16,19 @@ function showList(products) {
   const markup = products
     .map(
       (product) =>
-        `<article class= "product ${product.discount && "tilbud"} ${product.soldout && "udsolgt"}">
+        `<article class= "product">
           <a href="product.html?id=${product.id}">
-            <div class="soldout">
-              <img src=https://kea-alt-del.dk/t7/images/webp/640/${product.id}.webp alt="Puma tshirt med cat " />
-              <p>SOLD OUT</p>
-            </div>
+          <img src=https://kea-alt-del.dk/t7/images/webp/640/${product.id}.webp alt="produktbillede" />
           </a>
-
+              <p class="soldout ${!product.soldout && "skjul"}">SOLD OUT</p>
           <h2 class="underoverskrift_product"> ${product.productdisplayname}</h2>
           <p class="brandname"> ${product.brandname}</p>
           <p class="price"> ${product.price}-</p>
-          <a class="productlinks" href="product.html?productid=${product.id}">Read more</a>
+          <div class="discount ${!product.discount && "skjul"} ">
+             <p class="price">Now DKK 1147,40,-</p>
+            <p>-${product.discount}%</p>
+          </div>
+          <a class="productlinks" href="product.html?id=${product.id}">Read more</a>
         </article>`
     )
 

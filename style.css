@@ -1,25 +1,17 @@
-.udsolgt .soldout {
-  opacity: 0.5;
-  pointer-events: none;
-}
-
-.soldout > * {
-  grid-column: 1;
-  grid-row: 1;
-}
-
 .soldout {
-  display: grid;
-  align-items: center;
+  pointer-events: none;
+  position: absolute;
+  top: 0;
+  right: 0;
 }
 
-.soldout img {
+img {
   width: 100%;
   height: auto;
   object-fit: cover;
 }
 
-.soldout p {
+.soldout {
   grid-column: 1;
   grid-row: 1;
   font-size: 20px;
@@ -45,4 +37,8 @@
 .brandname {
   font-family: roboto condensed;
   font-size: 20px;
+}
+
+.skjul {
+  display: none;
 }
