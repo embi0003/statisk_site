@@ -232,10 +232,6 @@ nav {
   font-family: roboto condensed;
 }
 
-.discounted {
-  font-family: roboto condensed;
-}
-
 .productlinks {
   font-family: roboto condensed;
   color: black;
@@ -246,6 +242,7 @@ nav {
   justify-content: flex-end;
   align-items: center;
   gap: 5px;
+  /* visibility: hidden; */
 }
 
 .discount p:last-child {
@@ -256,6 +253,7 @@ nav {
 }
 
 .productContainer {
+  position: relative;
   display: grid;
   grid-template-columns: 1fr;
   gap: 20px;
@@ -411,10 +409,6 @@ button {
     font-family: roboto condensed;
   }
 
-  .discounted {
-    font-family: roboto condensed;
-  }
-
   .productlinks {
     font-family: roboto condensed;
     color: black;
@@ -425,6 +419,7 @@ button {
     justify-content: flex-end;
     align-items: center;
     gap: 5px;
+    /* visibility: hidden; */
   }
 
   .discount p:last-child {

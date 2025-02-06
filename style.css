@@ -19,6 +19,7 @@ img {
   color: #131110;
   background-color: grey;
   padding: 10px;
+  visibility: hidden;
 }
 
 .productlinks.disabled {
@@ -34,4 +35,8 @@ img {
 
 .skjul {
   display: none;
+}
+
+.synlig {
+  visibility: visible;
 }
