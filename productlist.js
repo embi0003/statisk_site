@@ -20,14 +20,20 @@ function showList(products) {
           <a href="product.html?id=${product.id}">
           <img src=https://kea-alt-del.dk/t7/images/webp/640/${product.id}.webp alt="produktbillede" />
           </a>
+
               <p class="soldout ${!product.soldout && "skjul"}">SOLD OUT</p>
+
+
           <h2 class="underoverskrift_product"> ${product.productdisplayname}</h2>
           <p class="brandname"> ${product.brandname}</p>
           <p class="price"> ${product.price}-</p>
+
+
           <div class="discount ${!product.discount && "skjul"} ">
              <p class="price">Now DKK 1147,40,-</p>
             <p>-${product.discount}%</p>
           </div>
+          
           <a class="productlinks" href="product.html?id=${product.id}">Read more</a>
         </article>`
     )

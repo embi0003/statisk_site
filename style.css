@@ -18,14 +18,7 @@ img {
   font-family: roboto condensed;
   color: #131110;
   background-color: grey;
-  text-align: center;
-  margin: 0;
   padding: 10px;
-  z-index: 1;
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .productlinks.disabled {
