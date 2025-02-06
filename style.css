@@ -1,40 +1,25 @@
-.udsolgt .soldout {
-  opacity: 0.5;
+.soldout {
   pointer-events: none;
+  position: absolute;
+  top: 0;
+  right: 0;
 }
 
-.img-w-txt > * {
-  grid-column: 1;
-  grid-row: 1;
-}
-
-.img-w-txt {
-  display: grid;
-  align-items: center;
-}
-
-.img-w-txt img {
+img {
   width: 100%;
   height: auto;
   object-fit: cover;
 }
 
-.img-w-txt p {
+.soldout {
   grid-column: 1;
   grid-row: 1;
   font-size: 20px;
   font-family: roboto condensed;
   color: #131110;
   background-color: grey;
-  text-align: center;
-  margin: 0;
   padding: 10px;
-  z-index: 1;
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  display: none;
+  visibility: hidden;
 }
 
 .productlinks.disabled {
@@ -46,4 +31,12 @@
 .brandname {
   font-family: roboto condensed;
   font-size: 20px;
+}
+
+.skjul {
+  display: none;
+}
+
+.synlig {
+  visibility: visible;
 }
